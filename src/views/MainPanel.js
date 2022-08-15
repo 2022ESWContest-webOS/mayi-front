@@ -2,6 +2,7 @@ import kind from '@enact/core/kind';
 import { Panel, Header } from '@enact/sandstone/Panels';
 
 import VideoList from '../components/VideoList';
+import SignIn from '../components/SignIn';
 
 // dummy data
 const videos = [
@@ -16,6 +17,7 @@ const MainPanel = kind({
 
   render: (props) => (
     <Panel {...props}>
+      <SignIn />
       <VideoList videos={videos} />
     </Panel>
   ),
