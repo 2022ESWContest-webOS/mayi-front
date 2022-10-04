@@ -1,26 +1,23 @@
-import kind from '@enact/core/kind';
 import ThemeDecorator from '@enact/sandstone/ThemeDecorator';
-import Panels from '@enact/sandstone/Panels';
 
-import MainPanel from '../views/MainPanel';
+import { HashRouter, Redirect, Route, Routes } from 'react-router-dom';
+
+import CameraList from '../views/CameraList';
+import SignIn from '../views/SignIn';
 
 import './attachErrorHandler';
+import './App.css';
 
-import css from './App.module.less';
-
-const App = kind({
-	name: 'App',
-
-	styles: {
-		css,
-		className: 'app'
-	},
-
-	render: (props) => (
-		<Panels {...props}>
-			<MainPanel />
-		</Panels>
-	)
-});
+const App = () => {
+  // app
+  return (
+    <HashRouter>
+      <Routes>
+        <Route path="/" element={<SignIn />} />
+        <Route path="/video" element={<CameraList />} />
+      </Routes>
+    </HashRouter>
+  );
+};
 
 export default ThemeDecorator(App);
