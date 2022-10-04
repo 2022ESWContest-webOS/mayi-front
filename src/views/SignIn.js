@@ -33,9 +33,23 @@ const SignInPage = () => {
         return;
       }
 
-      // login 요청 후 처리 (id, pwd, isAdminMode)
+      // TODO: login 요청 후 처리 (id, pwd, isAdminMode)
       console.log(id, pwd, isAdminMode);
-      // navigate('/video');
+
+      // TODO: 관리자모드 로그인 성공 시
+      if (isAdminMode) {
+        navigate('/video');
+        return;
+      }
+
+      // TODO: 일반 모드 로그인 성공 시
+      if (!isAdminMode) {
+        // navigate('/')
+        return;
+      }
+
+      // 로그인 실패 시
+      createToast('로그인에 실패하였습니다.');
     },
     [id, pwd, isAdminMode]
   );
