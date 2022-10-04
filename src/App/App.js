@@ -14,7 +14,7 @@ const App = () => {
     <HashRouter>
       <Routes>
         <Route path="/" element={<SignInPage />} />
-        <Route path="/camera-list" element={<CameraListPage />} />
+        <Route path="/camera" element={<CameraListPage />} />
       </Routes>
     </HashRouter>
   );

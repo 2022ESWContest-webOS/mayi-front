@@ -9,10 +9,10 @@ const PageLayout = ({ children }) => {
   return (
     <div className="layout">
       <div className="nav">
-        <button className="nav-item" onClick={() => navigate('/camera-list')}>
+        <button className="nav-item" onClick={() => navigate('/camera')}>
           카메라 리스트
         </button>
-        <button className="nav-item" onClick={() => navigate('/log')}>
+        <button className="nav-item" onClick={() => navigate('/event')}>
           일지
         </button>
       </div>

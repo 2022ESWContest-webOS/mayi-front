@@ -38,7 +38,7 @@ const SignInPage = () => {
 
       // TODO: 관리자모드 로그인 성공 시
       if (isAdminMode) {
-        navigate('/camera-list');
+        navigate('/camera');
         return;
       }
 
