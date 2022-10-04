@@ -1,9 +1,9 @@
 import VideoPlayer from './VideoPlayer';
-import css from './VideoList.module.less';
+import './CameraList.css';
 
-const VideoList = ({ videos, idx }) => {
+const CameraList = ({ videos, idx }) => {
   return (
-    <div className={css['video-list']}>
+    <div className={'video-list'}>
       {videos.map((video, idx) => (
         <VideoPlayer
           src={video}
@@ -15,4 +15,4 @@ const VideoList = ({ videos, idx }) => {
   );
 };
 
-export default VideoList;
+export default CameraList;

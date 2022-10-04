@@ -1,5 +1,6 @@
 .video {
   position: relative;
+  /* border-radius: 50%; */
 }
 
 .video-full {
@@ -8,6 +9,6 @@
 }
 
 .video-split {
-  width: 50%;
-  height: 50%;
+  width: 48%;
+  height: 48%;
 }

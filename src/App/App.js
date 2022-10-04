@@ -1,9 +1,9 @@
 import ThemeDecorator from '@enact/sandstone/ThemeDecorator';
 
-import { HashRouter, Redirect, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 
-import CameraList from '../views/CameraList';
-import SignIn from '../views/SignIn';
+import SignInPage from '../views/SignIn';
+import CameraListPage from '../views/CameraList';
 
 import './attachErrorHandler';
 import './App.css';
@@ -13,8 +13,8 @@ const App = () => {
   return (
     <HashRouter>
       <Routes>
-        <Route path="/" element={<SignIn />} />
-        <Route path="/video" element={<CameraList />} />
+        <Route path="/" element={<SignInPage />} />
+        <Route path="/camera-list" element={<CameraListPage />} />
       </Routes>
     </HashRouter>
   );
