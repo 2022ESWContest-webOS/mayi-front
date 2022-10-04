@@ -9,6 +9,7 @@ const SignInPage = () => {
 
   const [id, setId] = useState('');
   const [pwd, setPwd] = useState('');
+  const [isAdminMode, setAdminMode] = useState(false);
 
   const onIdChange = useCallback((e) => {
     setId(e.target.value);
@@ -17,6 +18,10 @@ const SignInPage = () => {
   const onPwdChange = useCallback((e) => {
     setPwd(e.target.value);
   }, []);
+
+  const onToggle = useCallback(() => {
+    setAdminMode((prev) => !prev);
+  }, [setAdminMode]);
 
   const onSubmit = useCallback(
     (e) => {
@@ -28,11 +33,11 @@ const SignInPage = () => {
         return;
       }
 
-      // login 요청 후 처리
-      // createToast(`ID: ${id}, PWD: ${pwd}`);
-      navigate('/video');
+      // login 요청 후 처리 (id, pwd, isAdminMode)
+      console.log(id, pwd, isAdminMode);
+      // navigate('/video');
     },
-    [id, pwd]
+    [id, pwd, isAdminMode]
   );
 
   return (
@@ -40,6 +45,7 @@ const SignInPage = () => {
       onIdChange={onIdChange}
       onPwdChange={onPwdChange}
       onSubmit={onSubmit}
+      onToggle={onToggle}
     />
   );
 };

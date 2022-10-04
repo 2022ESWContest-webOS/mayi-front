@@ -2,7 +2,7 @@ import './SignIn.css';
 import logo from '../../../resources/images/logo.svg';
 import Switch from '@enact/sandstone/Switch';
 
-const SignIn = ({ onIdChange, onPwdChange, onSubmit }) => {
+const SignIn = ({ onIdChange, onPwdChange, onSubmit, onToggle }) => {
   return (
     <div className="login-wrapper">
       <div className="login-area">
@@ -10,7 +10,7 @@ const SignIn = ({ onIdChange, onPwdChange, onSubmit }) => {
           <img src={logo} alt="" />
           <div className="admin">
             <span className="admin-text">관리자 모드</span>
-            <Switch />
+            <Switch onToggle={onToggle} />
           </div>
         </div>
         <div className="login-area-body">
