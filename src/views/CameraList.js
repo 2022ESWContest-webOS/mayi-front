@@ -1,5 +1,5 @@
 import CameraList from '../components/CameraList';
-import PageLayout from '../components/PageLayout/PageLayout';
+import PageLayout from '../components/PageLayout';
 
 // dummy data
 const videos = [
