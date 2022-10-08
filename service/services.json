@@ -1,0 +1,9 @@
+{
+  "id": "com.mayi.app.service",
+  "description": "Service",
+  "services": [
+    {
+      "name": "com.mayi.app.service"
+    }
+  ]
+}
