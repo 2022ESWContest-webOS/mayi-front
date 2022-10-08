@@ -26,6 +26,13 @@
   cursor: pointer;
 }
 
+.admin {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 3rem;
+}
+
 .content {
   position: relative;
   display: flex;

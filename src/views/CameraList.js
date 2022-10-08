@@ -11,7 +11,7 @@ const videos = [
 
 const CameraListPage = () => {
   return (
-    <PageLayout>
+    <PageLayout isAdminMode={true}>
       <CameraList videos={videos} />
     </PageLayout>
   );

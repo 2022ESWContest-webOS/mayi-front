@@ -1,6 +1,6 @@
+import Switch from '@enact/sandstone/Switch';
 import './SignIn.css';
 import logo from '../../../resources/images/logo.svg';
-import Switch from '@enact/sandstone/Switch';
 
 const SignIn = ({ onIdChange, onPwdChange, onSubmit, onToggle }) => {
   return (

@@ -20,7 +20,7 @@ const events = [
 
 const EventListPage = () => {
   return (
-    <PageLayout>
+    <PageLayout isAdminMode={true}>
       <EventList events={events} />
     </PageLayout>
   );
